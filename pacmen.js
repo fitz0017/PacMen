@@ -62,7 +62,7 @@ function checkCollisions(item) {
   if (
     item.position.y + item.velocity.y + item.newimg.height >
       window.innerHeight ||
-    item.position.y + item.velocity.y - 50 < 0
+    item.position.y + item.velocity.y < 50
   ) {
     item.velocity.y = -item.velocity.y;
   }
