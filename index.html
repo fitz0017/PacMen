@@ -8,8 +8,27 @@
     <script src="./pacmen.js"></script>
   </head>
   <body>
-    <div id="game">
-      <button onclick="makeOne()" width="200" height="30">Add PacMan</button>
+    <div
+      id="game"
+      style="
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: lightgray;
+        border: 2px solid black;
+        border-radius: 5%;
+        height: 100%;
+        width: 100%;
+      "
+    >
+      <button
+        onclick="makeOne()"
+        width="200"
+        height="30"
+        style="margin: 20px 20px"
+      >
+        Add PacMan
+      </button>
       <button onclick="update()" width="200" height="30">Start Game</button>
     </div>
   </body>
