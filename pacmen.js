@@ -25,7 +25,6 @@ function makePac() {
   newimg.style.left = position.x + "px";
   newimg.style.top = position.y + 50 + "px";
   game.appendChild(newimg);
-  // new style of creating an object
   return {
     position,
     velocity,
@@ -72,7 +71,6 @@ function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
 }
 
-//don't change this line
 if (typeof module !== "undefined") {
   module.exports = { checkCollisions, update, pacMen };
 }
